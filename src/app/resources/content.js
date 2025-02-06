@@ -56,11 +56,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `I'm just a dude, playing as another dude`,
-  headline: <>Captain of The Rocinate</>,
+  headline: <>Captain, The Rocinate</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm James Holden, and I approve this message
     </>
   ),
 };
@@ -68,7 +67,7 @@ const home = {
 const about = {
   label: "About",
   title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role},
   tableOfContent: {
     display: true,
     subItems: false,
@@ -85,14 +84,15 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        If you're looking for someone who can turn any simple mission into an 
+        interplanetary incident while maintaining a sense of humor about it, I'm your guy. 
+        Eight parents taught me how to share, the UN Navy taught me discipline, 
+        and the void of space taught me that sometimes the best solution is just to shoot your way out.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -112,25 +112,24 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
+            // src: "/images/projects/project-01/cover-01.jpg",
+            // alt: "Once UI Project",
+            // width: 16,
+            // height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Pur'n'Kleen Water Company",
+        role: "Executive Officer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Maintained 100% response rate to distress signals (against direct corporate orders
+            - you're welcome, humanity)
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Successfully managed crew morale through innovative methods like "looking the other way" 
+            regarding fraternisation policies
           </>,
         ],
         images: [],
@@ -138,7 +137,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -152,7 +151,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
@@ -175,15 +174,16 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "The Rocinate Co.",
+        description: <>kickstarted an interplanetary war, saved humanity a few times, fought some ancient alien tech, 
+        and somehow managed to keep the crew intact</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            // src: "/images/projects/project-01/cover-04.jpg",
+            // alt: "Project image",
+            // width: 16,
+            // height: 9,
           },
         ],
       },
@@ -200,9 +200,9 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  label: "Past Work",
+  title: "The Rocinate's Past Work",
+  description: `Saving humanity, one crisis at a time`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -210,7 +210,7 @@ const work = {
 const gallery = {
   label: "Gallery",
   title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
+  description: `Some stuff I did`,
   // Images from https://pexels.com
   images: [
     {
