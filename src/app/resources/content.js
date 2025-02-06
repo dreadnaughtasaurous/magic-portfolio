@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "James",
+  lastName: "Holden",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Captain",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Australia/Melbourne", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: [""], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,12 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Former ice hauler turned accidental hero and current Captain of the Rocinante. 
+      
+      <br />I have a terrible habit of broadcasting every conspiracy I stumble upon and a moral compass 
+      that points stubbornly to "do the right thing, consequences be damned." 
+        
+      <br />But hey, at least I make a decent cup of coffee and haven't gotten my crew killed yet (though not for lack of trying)
     </>
   ),
 };
@@ -51,8 +55,8 @@ const social = [
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  description: `I'm just a dude, playing as another dude`,
+  headline: <>Captain of The Rocinate</>,
   subline: (
     <>
       I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
