@@ -14,18 +14,30 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: (
+    <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      Subscribe to {person.firstName}'s Newsletter
+    </h2>
+  ),
   description: (
-    <>
-      Former ice hauler turned accidental hero and current Captain of the Rocinante. 
+    <div className="space-y-4 text-gray-700 leading-relaxed">
+      <p>
+        Former ice hauler turned accidental hero and current Captain of the Rocinante.
+      </p>
       
-      <br />I have a terrible habit of broadcasting every conspiracy I stumble upon and a moral compass 
-      that points stubbornly to "do the right thing, consequences be damned." 
-        
-      <br />But hey, at least I make a decent cup of coffee and haven't gotten my crew killed yet (though not for lack of trying)
-    </>
+      <p>
+        I have a terrible habit of broadcasting every conspiracy I stumble upon and a moral compass 
+        that points stubbornly to "do the right thing, consequences be damned."
+      </p>
+      
+      <p>
+        But hey, at least I make a decent cup of coffee and haven't gotten my crew killed yet 
+        (though not for lack of trying)
+      </p>
+    </div>
   ),
 };
+
 
 const social = [
   // Links are automatically displayed.
